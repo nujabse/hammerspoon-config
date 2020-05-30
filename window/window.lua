@@ -5,7 +5,7 @@ local window = require "hs.window"
 
 
 --当前窗口全屏
-hs.hotkey.bind(hyper,"O", function()
+hs.hotkey.bind(hyper,"o", function()
   local win = hs.window.focusedWindow()
     local f = win:frame()
     local screen = win:screen()
