@@ -50,9 +50,9 @@ end
 -- end
 
 --解锁屏幕自动设定输入法为百度输入法
-local function Chinese()
-   hs.keycodes.currentSourceID("com.baidu.inputmethod.BaiduIM.pinyin")
-end
+-- local function Chinese()
+   -- hs.keycodes.currentSourceID("com.baidu.inputmethod.BaiduIM.pinyin")
+-- end
 
 
 function caffeinateCallback(eventType)
