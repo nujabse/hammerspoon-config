@@ -41,6 +41,6 @@ hs.hotkey.bind({"alt"},'2',open("Microsoft Word"))
 hs.hotkey.bind({"alt"},"3",open("VNote"))
 hs.hotkey.bind({"alt"},"4",open("Microsoft OneNote"))
 hs.hotkey.bind({"alt"},"P",open("Pdf Expert"))
-hs.hotkey.bind({"ctrl"},"N",open("Notion"))
-hs.hotkey.bind({"alt"},"T",open("Typora"))
+hs.hotkey.bind({"alt"},"N",open("NeatDownloadManager"))
+-- hs.hotkey.bind({"alt"},"T",open("Typora"))
 
