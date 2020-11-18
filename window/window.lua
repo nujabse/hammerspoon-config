@@ -1,6 +1,7 @@
 require "hs.application"
 --local hotkey = require "hs.hotkey"
 hyper = {'ctrl', 'cmd'}
+windowHotKey = {'ctrl', 'shift'}
 local window = require "hs.window"
 
 
@@ -136,3 +137,26 @@ hs.hotkey.bind(hyper,"m", function()
     win:setFrame(f)
 end)
 
+  -- move windows between two windows, credit to
+  -- https://github.com/forecho/hammerspoon-config/blob/master/modules/window.lua
+hs.hotkey.bind(windowHotKey, 'right', function()
+    local w = hs.window.focusedWindow()
+    if not w then
+        return
+    end
+    local s = w:screen():toEast()
+    if s then
+        w:moveToScreen(s)
+    end
+end)
+
+hs.hotkey.bind(windowHotKey, 'left', function()
+    local w = hs.window.focusedWindow()
+    if not w then
+        return
+    end
+    local s = w:screen():toWest()
+    if s then
+        w:moveToScreen(s)
+    end
+end)
