@@ -21,6 +21,7 @@ end
 
 
 --开关蓝牙
+--requires blueutil package installed, can be installed via brew
 function bluetoothSwitchOff(state)
   -- state: 0(off), 1(on)
   cmd = "/usr/local/bin/blueutil --power 0"--..(state)
@@ -61,13 +62,13 @@ function caffeinateCallback(eventType)
     -- else
     if (eventType == hs.caffeinate.watcher.screensDidUnlock) then
       wifiSwitchOn()
-      connectBluetooth()
+      bluetoothSwitchOn()
    --   Chinese()     
     end
 
     if (eventType == hs.caffeinate.watcher.systemWillSleep) then
-    --  bluetoothSwitchOff()
-      wifiSwitchOff()
+        wifiSwitchOff()
+        bluetoothSwitchOff()
 
    -- elseif (eventType == hs.caffeinate.watcher.systemDidWake) then
 
