@@ -15,6 +15,7 @@ local app2Ime = {
     {'/Applications/Evernote.app', 'Chinese'},
     {'/Applications/NeteaseMusic.app', 'Chinese'},
     {'/Applications/iTerm.app', 'English'},
+    {'/System/Applications/Utilities/Terminal.app', 'English'},
     {'/Applications/Visual Studio Code.app', 'English'},
     {'/Applications/Xcode.app', 'English'},
     {'/Applications/Google Chrome.app', 'Chinese'},
@@ -25,7 +26,7 @@ local app2Ime = {
 }
 
 function updateFocusAppInputMethod()
-    local ime = 'English'
+    local ime = 'Chinese'
     local focusAppPath = hs.window.frontmostWindow():application():path()
     for index, app in pairs(app2Ime) do
         local appPath = app[1]
