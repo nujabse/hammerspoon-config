@@ -3,13 +3,13 @@ local bleDeviceID = '00-16-94-3c-8e-f7'
 --开关wifi
 function wifiSwitchOff()
   -- state: off, on
-  cmd = "/usr/sbin/networksetup -setairportpower en0 off"--..(state)
-  result = hs.osascript.applescript(string.format('do shell script "%s"', cmd))
+  hs.wifi.setPower(false)
+  hs.notify.new({title="Hammerspoon", informativeText="Wi-Fi off"}):send()
 end
 function wifiSwitchOn()
   -- state: off, on
-  cmd = "/usr/sbin/networksetup -setairportpower en0 on"--..(state)
-  result = hs.osascript.applescript(string.format('do shell script "%s"', cmd))
+  hs.wifi.setPower(true)
+  hs.notify.new({title="Hammerspoon", informativeText="Wi-Fi on"}):send()
 end
 
 
