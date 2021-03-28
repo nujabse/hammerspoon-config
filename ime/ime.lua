@@ -15,7 +15,7 @@ local app2Ime = {
     {'/Applications/Evernote.app', 'Chinese'},
     {'/Applications/NeteaseMusic.app', 'Chinese'},
     {'/Applications/iTerm.app', 'English'},
-    {'/usr/local/Cellar/emacs-mac/emacs-27.1-mac-8.1/Emacs.app', 'English'},
+    {'/usr/local/Cellar/emacs-mac/emacs-27.2-mac-8.2/Emacs.app', 'English'},
     {'/System/Applications/Utilities/Terminal.app', 'English'},
     {'/Applications/Visual Studio Code.app', 'English'},
     {'/Applications/Microsoft Word.app', 'English'},
