@@ -18,6 +18,8 @@ local app2Ime = {
     {'/usr/local/Cellar/emacs-mac/emacs-27.1-mac-8.1/Emacs.app', 'English'},
     {'/System/Applications/Utilities/Terminal.app', 'English'},
     {'/Applications/Visual Studio Code.app', 'English'},
+    {'/Applications/Microsoft Word.app', 'English'},
+    {'/Applications/MATLAB_R2020b.app', 'English'},
     {'/Applications/Xcode.app', 'English'},
     {'/Applications/Google Chrome.app', 'Chinese'},
     {'/System/Library/CoreServices/Finder.app', 'Chinese'},
