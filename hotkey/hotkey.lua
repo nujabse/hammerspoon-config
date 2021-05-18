@@ -1,6 +1,6 @@
 hyper = {'ctrl', 'cmd'}
 
-hs.hotkey.bind({"cmd"}, "L", hs.caffeinate.systemSleep)
+-- hs.hotkey.bind({"cmd"}, "L", hs.caffeinate.systemSleep)
 -- hs.hotkey.bind({"alt","ctrl"},"T",hs.application.launch.launchOrFocus("Terminal"))
 
 -- show front activated app infos
@@ -41,6 +41,8 @@ hs.hotkey.bind({"alt"},'1',open("Emacs"))
 hs.hotkey.bind({"alt"},'2',open("Microsoft Word"))
 hs.hotkey.bind({"alt"},"3",open("Microsoft Powerpoint"))
 hs.hotkey.bind({"alt"},"4",open("Evernote"))
+hs.hotkey.bind({"alt"},"5",open("Vesta"))
+hs.hotkey.bind({"alt"},"D",open("Dash"))
 hs.hotkey.bind({"alt"},"P",open("Pdf Expert"))
 hs.hotkey.bind({"alt"},"N",open("NeatDownloadManager"))
 -- hs.hotkey.bind({"alt"},"T",open("Typora"))
