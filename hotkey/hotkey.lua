@@ -48,6 +48,6 @@ hs.hotkey.bind({"alt"},"4",open("Evernote"))
 hs.hotkey.bind({"alt"},"5",open("Vesta"))
 hs.hotkey.bind({"alt"},"D",open("Dash"))
 hs.hotkey.bind({"alt"},"P",open("Pdf Expert"))
-hs.hotkey.bind({"alt"},"N",open("NeatDownloadManager"))
+-- hs.hotkey.bind({"alt"},"N",open("NeatDownloadManager"))
 -- hs.hotkey.bind({"alt"},"T",open("Typora"))
 
