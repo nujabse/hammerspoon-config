@@ -15,36 +15,35 @@ local app2Ime = {
     {'/Applications/Evernote.app', 'Chinese'},
     {'/Applications/NeteaseMusic.app', 'Chinese'},
     {'/Applications/iTerm.app', 'English'},
-    {'/usr/local/Cellar/emacs-mac/emacs-27.2-mac-8.2/Emacs.app', 'English'},
+    {'/usr/local/Cellar/emacs-plus@28/28.1/Emacs.app', 'English'},
+    {'/usr/local/Cellar/emacs-mac/emacs-28.1-mac-9.0/Emacs.app', 'English'},
     {'/System/Applications/Utilities/Terminal.app', 'English'},
     {'/Applications/Visual Studio Code.app', 'English'},
     {'/Applications/Microsoft Word.app', 'English'},
     {'/Applications/MATLAB_R2020b.app', 'English'},
     {'/Applications/Xcode.app', 'English'},
-    {'/Applications/Google Chrome.app', 'Chinese'},
-    {'/System/Library/CoreServices/Finder.app', 'Chinese'},
+    {'/Applications/Google Chrome.app', 'English'},
+    {'/Applications/Firefox.app', 'English'},
+    {'/System/Library/CoreServices/Finder.app', 'English'},
     {'/Applications/Kindle.app', 'English'},
     {'/Applications/System Preferences.app', 'English'},
     {'/Applications/DingTalk.app', 'Chinese'},
 }
 
 function updateFocusAppInputMethod()
-    local ime = 'Chinese'
     local focusAppPath = hs.window.frontmostWindow():application():path()
     for index, app in pairs(app2Ime) do
         local appPath = app[1]
         local expectedIme = app[2]
 
         if focusAppPath == appPath then
-            ime = expectedIme
+            if expectedIme == 'Chinese' then
+                Chinese()
+            else
+                English()
+            end
             break
         end
-    end
-
-    if ime == 'English' then
-        English()
-    else
-        Chinese()
     end
 end
 
